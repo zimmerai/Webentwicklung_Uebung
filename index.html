@@ -8,11 +8,37 @@
     <title>Das bin ich</title>
 </head>
 <body>
-    <h1>Hallo Welt!</h1>
-    <button onclick="onButtonPress()">Click mal!</button>
-    <l>
-        
-    </l>
+    <div style="flex-direction: row;">
+        <h1>Hier genießt mein Portfolio!</h1>
+        <tbody>Ich heiße Aidan, bin 20 Jahre alt und arbeite bei der SAP</tbody>
+    </div>
+    <img width="10%" src="/img/me.jpg" alt="Aidan Zimmer">
+    
+
+    <h1>Das sind meine Hobbies!</h1>
+    <ul id="Alle Hobbies">
+        <li>Games</li>
+        <li>
+            Sport
+            <ul id="Sport">
+                <li>
+                    Joggen
+                </li>
+            </ul>
+        </li>
+    </ul>
+        <form >
+            <div style="flex-direction: column;">
+                <label name="neuesHobbyLabel" for="neuesHobby">Gebe dein neues Hobby ein</label>
+                <input name="neuesHobby" type="text" id="neuesHobby" placeholder="neues Hobby">
+            </div> </br>
+            <label name="hobbyLabel" for="hobbyAuswahl">Welche Art von Hobby?</label>
+            <select name="hobbyAuswahl" id="hobbyAuswahl">
+                <option value="Alle Hobbies">Alle Hobbies</option>
+                <option value="Sport">Sport</option>
+            </select> </br> </br>
+          <button>Hinzufügen</button>
+        </form>
     <script src="script.js"></script>
 </body>
 </html>
