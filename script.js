@@ -23,9 +23,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 break;
         }
 
-        var li = document.createElement("li");
-        li.innerText = inputValue
-        list.appendChild(li);
-        document.getElementById('neuesHobby').value = "";
+        if (inputValue) {
+            var li = document.createElement("li");
+            li.innerText = inputValue
+            list.appendChild(li);
+            document.getElementById('neuesHobby').value = "";
+        } else {
+            alert("No Input given")
+        }
     })
 })
