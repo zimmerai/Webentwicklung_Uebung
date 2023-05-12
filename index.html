@@ -10,36 +10,42 @@
 </head>
 
 <body>
-    <div style="flex-direction: row;">
-        <h1>Hier genießt mein Portfolio!</h1>
-        <tbody>Ich heiße Aidan, bin 20 Jahre alt und arbeite bei der SAP</tbody>
-    </div>
-    <img width="10%" src="/img/me.jpg" alt="Aidan Zimmer">
-
-
-    <h1>Das sind meine Hobbies!</h1>
-    <ul id="Alle Hobbies">
-        <li>Games</li>
-        <li>
-            Sport
-            <ul id="Sport">
+    <div class="row">
+        <img class="element" width="10%" src="/img/me.jpg" alt="Aidan Zimmer">
+        <div class="element">
+            <h1>Hier genießt mein Portfolio!</h1>
+            <tbody>
+                Ich heiße Aidan, bin 20 Jahre alt und arbeite bei der SAP. </br>
+                Ich bin in React ganz gut, aber in CSS bin ich echt schlecht. </br>
+                Frontend Entwicklung ist trotz CSS echt toll.
+            </tbody>
+        </div>
+        <div class="element">
+            <h1>Das sind meine Hobbies!</h1>
+            <ul id="Alle Hobbies">
+                <li>Games</li>
                 <li>
-                    Joggen
+                    Sport
+                    <ul id="Sport">
+                        <li>
+                            Joggen
+                        </li>
+                    </ul>
                 </li>
             </ul>
-        </li>
-    </ul>
-    <form>
-        <label name="neuesHobbyLabel" for="neuesHobby">Gebe dein neues Hobby ein</label>
-        <input name="neuesHobby" type="text" id="neuesHobby" placeholder="neues Hobby">
-        </br>
-        <label name="hobbyLabel" for="hobbyAuswahl">Welche Art von Hobby?</label>
-        <select name="hobbyAuswahl" id="hobbyAuswahl">
-            <option value="Alle Hobbies">Alle Hobbies</option>
-            <option value="Sport">Sport</option>
-        </select> </br> </br>
-        <button>Hinzufügen</button>
-    </form>
+            <form>
+                <label name="neuesHobbyLabel" for="neuesHobby">Gebe dein neues Hobby ein</label>
+                <input name="neuesHobby" type="text" id="neuesHobby" placeholder="neues Hobby">
+                </br>
+                <label name="hobbyLabel" for="hobbyAuswahl">Welche Art von Hobby?</label>
+                <select name="hobbyAuswahl" id="hobbyAuswahl">
+                    <option value="Alle Hobbies">Alle Hobbies</option>
+                    <option value="Sport">Sport</option>
+                </select> </br> </br>
+                <button>Hinzufügen</button>
+            </form>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 

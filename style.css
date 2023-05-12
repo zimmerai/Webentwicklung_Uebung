@@ -5,3 +5,12 @@ h1 {
 img {
     width: "20%";
 }
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.element {
+    width: 33%;
+}
